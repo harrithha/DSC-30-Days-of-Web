@@ -1,0 +1,47 @@
+*{
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+}
+
+    body {
+        background-image: url('ca.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        color: white;
+      } 
+
+      h6{
+font-size: 20px;
+padding: 0px;
+margin: 0px;
+color:paleturquoise;
+
+      }
+table{
+    border-collapse: collapse;
+   caption-side: initial;
+      
+      
+    
+}
+
+th,td,tr{
+    border:1px solid black;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: 2px solid cyan;
+   
+}
+p{
+    display: flex;
+    background-color:black;
+    padding: 0px;
+    margin: 0px;
+    color:cyan;
+    max-width: 100000px;
+
+}

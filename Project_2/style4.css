@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+}
+body {
+    background-image: url('Back2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+  } 
+
+  .col{
+      column-count: 2;
+      margin-left: 10px;
+  }
+  .h{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-gap: 2px;
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+  h1{
+      margin: 10px 10px 0px 10px;
+  }
+
+  .hobbies{
+     
+      margin-right: 0px;
+      padding-right: 0px;
+      padding: 0px;
+      margin: 0px;
+  }
+
+ 
+.img{
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+    display: block;
+    
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    bottom: 0px;
+    position: absolute;
+  
+}
+.right{
+    right: 0px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+}
