@@ -1,0 +1,22 @@
+
+body {
+    background-image: url("BackGround.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  margin-left: 0px;
+    padding-left: 0px;
+    color:black;
+ 
+  }
+
+  
+#Connect {
+  
+    margin-left: 0px;
+    padding-left: 30px;
+    color: black;
+    margin-top: 40px;
+  }
+  ul {
+    align-items: center;
+  }
