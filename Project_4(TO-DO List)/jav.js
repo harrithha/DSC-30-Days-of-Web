@@ -26,6 +26,13 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
+function myfun() {
+  const li = document.getElementById("myUL");
+  while (li.hasChildNodes()) {
+      li.removeChild(li.firstChild)
+  }
+
+}
 // Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");

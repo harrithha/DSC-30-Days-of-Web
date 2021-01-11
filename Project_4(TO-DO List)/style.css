@@ -64,7 +64,7 @@ ul li.checked::before {
     height: 15px;
     width: 7px;
   }
-  
+ 
   /* Style the close button */
   .close {
     position: absolute;
@@ -103,7 +103,9 @@ ul li.checked::before {
     float: left;
     font-size: 16px;
   }
-  
+.clear{
+  padding: 14px 40px;
+}
   /* Style the "Add" button */
   .addBtn {
     padding: 10px;
