@@ -1,0 +1,27 @@
+ul {
+    align-items: center;
+  }
+  body {
+    scroll-behavior: smooth;
+    background-image: url("BackGround.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  
+ 
+.WhoAmI{
+  background-image: url("BackGround.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+}
+
+.intro{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 150px;
+  margin-left: 10px;
+
+}

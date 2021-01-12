@@ -1,0 +1,32 @@
+.Car{
+
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+H1{
+    text-align: center;
+}
+
+body{
+    background-image: url('BackGround.jpg');
+    background-repeat: no-repeat;
+    background-attachment : fixed;
+    background-size: cover;
+}
+ul {
+    align-items: center;
+  }
+    
+  .Caro{
+      margin-left: 50px;
+      margin-right: auto;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }

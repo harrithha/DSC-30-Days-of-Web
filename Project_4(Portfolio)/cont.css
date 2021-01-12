@@ -1,0 +1,43 @@
+
+body {
+    background-image: url("BackGround.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  margin-left: 0px;
+    padding-left: 0px;
+    color:black;
+ 
+  }
+
+  
+#Connect {
+  
+    margin-left: 0px;
+    padding-left: 30px;
+    color: black;
+    margin-top: 20px;
+  }
+  ul {
+    align-items: center;
+  }
+  .Table{
+    color:darkblue;
+  }
+
+  tr {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ 
