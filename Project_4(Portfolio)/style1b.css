@@ -8,15 +8,50 @@ body {
   scroll-behavior: smooth;
 }
 
-.landing {
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-instagram {
+  background:rgb(211, 0, 116);
+  color: white;
+  
+}
+.fa-linkedin {
+  background: #007bb5;
+
+  color: white;
+}
+.fa:hover {
+    opacity: 1;
+}
+.Contact{
+
+  color: white;
+  padding-left: 20px;
+  text-align: center;
+}
+.Email{
+  position: absolute;
+  right: 30px;
+  font-size: 30px;
+  bottom: 0px;
+}
+body {
   background-image: url("BackGround.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
+
 .self {
   text-align: center;
-
+padding-top: 60px;
   align-items: center;
 
   display: flex;
