@@ -2,6 +2,12 @@
   margin: 0px;
   padding: 0px;
 }
+
+
+.edititem{
+
+  cursor: auto;
+}
 body {
 
 color: white;
@@ -13,7 +19,9 @@ background-size: cover;
 .clear{
   padding: 14px 40px;
 }
-
+#edit_button{
+  padding: 14px 40px;
+}
 
 H1{
 

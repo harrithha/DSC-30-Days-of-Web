@@ -1,23 +1,50 @@
 var myNodelist = document.getElementsByTagName("LI");
 var i;
+
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
+ 
+  var txt = document.createElement("i");
+  txt.classList.add("fa");
+  txt.classList.add("fa-trash");
+  
+  console.log(txt)
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
 
 
-
-
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
+    if (ev.target.getAttribute("flag") === "false") {
+      
+      ev.target.classList.add('checked');
+    }
 
+    const listItems = document.querySelectorAll("li");
+
+    for (let i = 0; i < listItems.length; i++){
+      listItems[i].classList.remove("edititem");
+      listItems[i].setAttribute("flag", "false");
+    }
+    ev.target.classList.add("edititem");
+    ev.target.setAttribute("flag", "true");
+    ev.target.addEventListener("keypress", (g) => {
+      if (g.key === "Enter") {
+        ev.target.setAttribute("contenteditable", "false");
+        ev.target.setAttribute("flag", "false");           
+
+        ev.target.classList.add('checked');
+        }
+    })
+
+  }
+
+}, false);
+function done(){
+}
 function myfun() {
   const li = document.getElementById("myUL");
   while (li.hasChildNodes()) {
@@ -25,6 +52,18 @@ function myfun() {
   }
 
 }
+
+function del() {
+  const listItems = document.querySelectorAll("li");
+
+  for (let i = 0; i < listItems.length; i++){
+      if(listItems[i].getAttribute("flag") === "true"){
+        listItems[i].setAttribute("contenteditable", "true");
+        listItems[i].classList.remove("checked")
+     }
+    }
+} 
+
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -47,7 +86,10 @@ function newElement() {
   document.getElementById("myInput").value = "";
 
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
+
+  var txt = document.createElement("i");
+  txt.classList.add("fa"); 
+  txt.classList.add("fa-trash"); 
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
